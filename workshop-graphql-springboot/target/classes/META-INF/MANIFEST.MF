@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: workshop-graphql-springboot
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Prashant
+Implementation-Vendor-Id: com.pras.graphql
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/workshop-graphql-springboot
+Created-By: Maven Integration for Eclipse
+

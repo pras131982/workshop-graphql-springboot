@@ -1,0 +1,5 @@
+uk/co/benskin/graphql_spring_boot_tutorial/GraphQLSpringBootTutorialApplication.class
+uk/co/benskin/graphql_spring_boot_tutorial/resolvers/Query.class
+uk/co/benskin/graphql_spring_boot_tutorial/entities/Actor.class
+uk/co/benskin/graphql_spring_boot_tutorial/enums/Animal.class
+uk/co/benskin/graphql_spring_boot_tutorial/entities/Pet.class

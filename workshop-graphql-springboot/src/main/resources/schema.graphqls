@@ -1,0 +1,61 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    pets: [Pet]
+    listDirectors:[Director!]
+    listActors: [Actor!]
+    listMovies:[Movie!]
+    getMovie(movieId:ID!):Movie
+}
+
+type Mutation {
+    addMovie(id: ID, title: String, year: Int,  genre: String,  budget: Int,  trailer: String):Movie!
+    addDirector(id : ID , fullName: String! , country: String):Director!
+    deleteDirector(directorId:ID!):[Director!]
+}
+
+type Subscription {
+    listenDirectorMovies:Movie!
+    listenDirector:Director!
+}
+
+type Pet {
+    id: Int!
+    type: Animal!
+    name: String
+    age: Int
+}
+
+enum Animal {
+    DOG
+    CAT
+    BADGER
+    MAMMOTH
+}
+
+type Movie {
+    id: ID!
+    title: String!
+    year: Int
+    genre: String
+    budget: Float!
+    trailer: String
+    director: Director!
+    actors(total:Int=1): [Actor!]
+}
+
+type Director{
+    id: ID!
+    fullName: String!
+    country: String
+}
+
+type Actor {
+    id: ID!
+    fullName: String!
+    country: String
+    gender: String
+}

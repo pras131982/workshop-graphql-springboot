@@ -1,6 +1,6 @@
-package uk.co.benskin.graphql_spring_boot_tutorial.entities;
+package com.pras.graphql.domain;
 
-public class Actor {
+public class Director {
 
     private Integer id;
 
@@ -8,13 +8,14 @@ public class Actor {
 
     private String country;
 
-    private String gender;
+    public Director(Integer id) {
+        this.id = id;
+    }
 
-    public Actor(Integer id, String fullName, String country, String gender) {
+    public Director(Integer id, String fullName, String country) {
         this.id = id;
         this.fullName = fullName;
         this.country = country;
-        this.gender = gender;
     }
 
     public Integer getId() {
@@ -39,13 +40,5 @@ public class Actor {
 
     public void setCountry(String country) {
         this.country = country;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
     }
 }

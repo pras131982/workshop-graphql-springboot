@@ -1,12 +1,12 @@
-package uk.co.benskin.graphql_spring_boot_tutorial;
+package com.pras.graphql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GraphQLSpringBootTutorialApplication {
+public class GraphQLApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GraphQLSpringBootTutorialApplication.class, args);
+        SpringApplication.run(GraphQLApplication.class, args);
     }
 }

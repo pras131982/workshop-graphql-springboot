@@ -1,4 +1,4 @@
-package uk.co.benskin.graphql_spring_boot_tutorial.enums;
+package com.pras.graphql.enums;
 
 public enum Animal {
     DOG,
